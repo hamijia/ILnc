@@ -10,11 +10,13 @@ install_github("hamijia/ILnc/ILnc")
 # Usage
 ```r
 library(ILnc)
+#Load the td file under the data folder in the ILnc package.
 data(td)
 #lnc_sig：
 lnc_sig
 #sig_label：
 sig_label
+#Load the example_data file under the data folder in the ILnc package.
 data(example_Data)
 #ILnc_example：An example of an expression matrix for ILnc analysis.
 ILnc_example
