@@ -26,6 +26,7 @@ write.table(ILnc_example,"ILnc_example.txt",col.names = T,row.names = T,quote=F,
 ILnc("ILnc_example.txt",c("NK","Treg"))
 ```
 # Data input
+### ILnc(x,y)
 | **Arguments** | **Detail** |
 | --- | --- |
 | **x** | The expression matrix should be a matrix with genes in rows and samples in columns. The rownames should be Ensembl ID.|
