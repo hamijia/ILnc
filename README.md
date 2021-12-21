@@ -14,7 +14,7 @@ data(td)
 lnc_sig
 sig_label
 exprMatrix = read.table(mixture_file,header=TRUE,row.names=1, as.is=TRUE)
-ILnc(exprMatrix,c("B","DC","Granulocytes","M0","M1","M2","Macrophage","Monocyte","Neutrophil","NK","CD8 T","CD4 T","CD3 T","Treg))
+ILnc(exprMatrix,c("B","DC","Granulocytes","M0","M1","M2","Macrophage","Monocyte","Neutrophil","NK","CD8 T","CD4 T","CD3 T","Treg"))
 ```
 #### Load data
 lnc_sig:<br>
