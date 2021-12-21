@@ -11,16 +11,18 @@ install_github("hamijia/ILnc/ILnc")
 ```r
 library(ILnc)
 data(td)
+#lnc_sig：
 lnc_sig
+#sig_label：
 sig_label
-exprMatrix = read.table(mixture_file,header=TRUE,row.names=1, as.is=TRUE)
-ILnc(exprMatrix,c("B","DC","Granulocytes","M0","M1","M2","Macrophage","Monocyte","Neutrophil","NK","CD8 T","CD4 T","CD3 T","Treg"))
+data(example_Data)
+#ILnc_example：An example of an expression matrix for ILnc analysis.
+ILnc_example
+#Download the data and save it to your work path.
+setwd("C:/Users/xumengjia/Desktop/aaa")
+write.table(ILnc_example,"ILnc_example.txt",col.names = T,row.names = T,quote=F,sep = "\t")
+ILnc("ILnc_example.txt",c("NK","Treg"))
 ```
-#### Load data
-lnc_sig:<br>
-sig_label:
-
-
 # Data input
 | **Arguments** | **Detail** |
 | --- | --- |
