@@ -12,9 +12,9 @@ install_github("hamijia/ILnc/ILnc")
 library(ILnc)
 #Load the td file under the data folder in the ILnc package.
 data(td)
-#lnc_sig：
+#lnc_sig：lnc_sig is the matrix of lncRNA signatures of 14 immune cells.
 lnc_sig
-#sig_label：
+#sig_label：sig_label is a set of 14 characteristic lncRNAs of immune cells.
 sig_label
 #Load the example_data file under the data folder in the ILnc package.
 data(example_Data)
