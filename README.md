@@ -14,15 +14,16 @@ library(ILnc)
 data(td)
 #lnc_sig：lnc_sig is the matrix of lncRNA signatures of 14 immune cells.
 lnc_sig
-#sig_label：sig_label is a set of 14 characteristic lncRNAs of immune cells.
+#sig_label：sig_label is a label matrix of which immune cells the lncRNA signatures belongs to.
 sig_label
 #Load the example_data file under the data folder in the ILnc package.
 data(example_Data)
 #ILnc_example：An example of an expression matrix for ILnc analysis.
 ILnc_example
 #Download the data and save it to your work path.
-setwd("C:/Users/xumengjia/Desktop/aaa")
+setwd("C:/Desktop")
 write.table(ILnc_example,"ILnc_example.txt",col.names = T,row.names = T,quote=F,sep = "\t")
+#Run the example
 ILnc("ILnc_example.txt",c("NK","Treg"))
 ```
 # Data input
